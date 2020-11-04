@@ -8,7 +8,7 @@ RUN echo $parse_version
 RUN apt-get update
 RUN apt-get install -y git
 
-RUN git clone https://github.com/parse-community/parse-php-sdk.git -b $parse_version --single-branch /parse-php-sdk
+RUN git clone https://github.com/parse-community/parse-php-sdk.git -b $parse_version /parse-php-sdk
 
 FROM $PHP_image
 
